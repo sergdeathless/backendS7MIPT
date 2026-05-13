@@ -1,0 +1,46 @@
+/* DatePickerSingle: убираем «лишнюю» ширину справа у поля и выравниваем с иконкой сброса */
+.delivery-date-picker-wrapper {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.delivery-date-picker-wrapper .SingleDatePicker {
+  width: auto !important;
+}
+
+.delivery-date-picker-wrapper .SingleDatePickerInput {
+  width: auto !important;
+  display: flex;
+  align-items: center;
+}
+
+.delivery-date-picker-wrapper .DateInput {
+  width: 14rem !important;
+  min-width: 14rem !important;
+  max-width: 14rem !important;
+  flex: 0 0 auto;
+}
+
+.delivery-date-picker-wrapper .DateInput_input {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  font-size: 14px !important;
+  padding: 6px 28px 6px 8px !important;
+}
+
+/* Запасные правила по id оболочки Dash (версии компонента могут отличаться) */
+#anchor-date.DateInput,
+#anchor-date .DateInput {
+  width: 14rem !important;
+  min-width: 14rem !important;
+  max-width: 14rem !important;
+  box-sizing: border-box !important;
+}
+
+#anchor-date .DateInput_input,
+#anchor-date input {
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
